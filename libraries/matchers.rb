@@ -3,10 +3,6 @@ if defined?(ChefSpec)
     ChefSpec::Matchers::ResourceMatcher.new(:macosx_accessibility, :insert, items)
   end
 
-  def install_macosx_accessibility(items)
-    ChefSpec::Matchers::ResourceMatcher.new(:macosx_accessibility, :install, items)
-  end
-
   def remove_macosx_accessibility(items)
     ChefSpec::Matchers::ResourceMatcher.new(:macosx_accessibility, :remove, items)
   end
