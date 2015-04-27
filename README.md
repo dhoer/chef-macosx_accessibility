@@ -27,7 +27,7 @@ database (TCC.db).
 Insert `/usr/bin/osascript` into the Accessibility database:
 
 ```ruby
-macosx_accessibility 'Add osascript' do
+macosx_accessibility 'Insert osascript' do
   items ['/usr/bin/osascript']
 end
 ```
@@ -35,7 +35,7 @@ end
 Insert TextExpander into the Accessibility database:
 
 ```ruby
-macosx_accessibility 'Add TextExpander' do
+macosx_accessibility 'Insert TextExpander' do
   items ['com.smileonmymac.textexpander', 'com.smileonmymac.textexpander.helper']
 end
 ```
