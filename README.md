@@ -21,7 +21,7 @@ Configures Mac OS X Accessibility using Jacob Salmela's [tccutil](https://github
 
 ## Usage
 
-Requires super-user priveleges. The user must have logged in previously with GUI. This creates the accessibility
+Requires super-user privileges. The user must have logged in previously with GUI. This creates the accessibility
 database (TCC.db).
 
 Insert `/usr/bin/osascript` into the Accessibility database:
