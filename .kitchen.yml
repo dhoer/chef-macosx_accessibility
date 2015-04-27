@@ -1,0 +1,25 @@
+---
+driver:
+  name: vagrant
+  provider: vmware_fusion
+  customize:
+      memory: 2048
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: macosx-10.10
+    driver:
+      box: macosx-10.10
+suites:
+  - name: macosx_accessibility_test
+    run_list:
+      - recipe[macosx_accessibility_test::setup]
+      - recipe[macosx_accessibility_test::insert]
+      - recipe[macosx_accessibility_test::disable]
+      - recipe[macosx_accessibility_test::enable]
+      - recipe[macosx_accessibility_test::remove]
+    attributes:
+      macosx_accessibility_test:
+        items: ['com.apple.RemoteDesktopAgent', '/usr/libexec/sshd-keygen-wrapper']
