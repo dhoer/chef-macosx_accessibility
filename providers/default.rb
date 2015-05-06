@@ -2,6 +2,8 @@ def whyrun_supported?
   true
 end
 
+use_inline_resources
+
 def tccutil(action, items)
   if platform_family?('mac_os_x')
     recipe_eval do
