@@ -2,7 +2,7 @@
 
 ## 1.0.0
 
-- Add use_inline_resources
+- Enable use_inline_resources in the provider
 
 ## 0.1.0
 
