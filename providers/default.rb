@@ -2,11 +2,17 @@ def whyrun_supported?
   true
 end
 
+use_inline_resources
+
+def tccutil_install
+  recipe_eval do
+    run_context.include_recipe 'macosx_accessibility::default'
+  end
+end
+
 def tccutil(action, items)
   if platform_family?('mac_os_x')
-    recipe_eval do
-      run_context.include_recipe 'macosx_accessibility::default'
-    end
+    tccutil_install
     items.each do |item|
       execute "sudo #{node['macosx_accessibility']['tccutil']['home']} --#{action} #{item}"
     end
