@@ -11,4 +11,4 @@
 
 Configures Mac OS X Accessibility using Jacob Salmela's [tccutil](https://github.com/jacobsalmela/tccutil).
 
-#### Deprecated in favor of https://github.com/dhoer/chef-privacy_services_manager!
+#### Deprecated in favor of [privacy_services_manager](https://github.com/dhoer/chef-privacy_services_manager)!
